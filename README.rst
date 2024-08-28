@@ -6,7 +6,7 @@ Collection of scripts (plugins) to be used by Nagios or Shinken in order to chec
 Requirements
 ------------
 
-- `monitoring.nagios <https://github.com/drylikov/monitoring_nagios>`_ package.
+- `monitoring_nagios <https://github.com/drylikov/monitoring_nagios>`_ package.
 
 To install using pip: ``$ pip install --upgrade git+http://github.com/drylikov/monitoring.nagios.git``.
 
