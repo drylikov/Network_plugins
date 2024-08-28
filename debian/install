@@ -1,0 +1,14 @@
+check_blade_temp.pl             usr/lib/faurecia/plugins/net
+check_cisco_config.py           usr/lib/faurecia/plugins/net
+check_cisco_cpu_module.pl       usr/lib/faurecia/plugins/net
+check_cisco_cpu.py              usr/lib/faurecia/plugins/net
+check_cisco_hard.py             usr/lib/faurecia/plugins/net
+check_cisco_hsrp.py             usr/lib/faurecia/plugins/net
+check_cisco_temp.py             usr/lib/faurecia/plugins/net
+check_snmpnetstat.py            usr/lib/faurecia/plugins/net
+check_ibm_san_directors_crcs.py usr/lib/faurecia/plugins/net
+check_oftp.py                   usr/lib/faurecia/plugins/net
+sgichk_sansw_ports.pl           usr/lib/faurecia/plugins/net
+check_nwc_health                usr/lib/faurecia/plugins/net
+shared.py                       usr/lib/faurecia/plugins/net
+contrib                         usr/lib/faurecia/plugins/net

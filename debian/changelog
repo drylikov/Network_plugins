@@ -1,0 +1,143 @@
+plugin-network (1.2.82) quantal; urgency=low
+
+  [ Mohamed CHERROUD ]
+  * Update plug-in following the Network Technical Desk : For all incidents =>
+    Only Warning case. Replace "hsrp group" by "Vlan". Delete the InfIndex
+    information.
+
+  [ Vincent BESANCON ]
+  * Removed project gitignore.
+  * [idea] share Pycharm configuration.
+  * [oftp] added timeout support when receiving data, avoid infinite loop.
+    refs #1914.
+
+ -- Vincent BESANCON <besancon.vincent@gmail.com>  Fri, 08 Feb 2013 14:32:06 +0100
+
+plugin-network (1.2.81) stable; urgency=low
+
+  * Update the output in multiple lines.
+
+ -- Mohamed CHERROUD <mohamed.cherroud-ext@faurecia.com>  Wed, 26 Dec 2012 09:07:06 +0100
+
+plugin-network (1.2.80) stable; urgency=low
+
+  * Add new plug-in for check HSRP
+
+ -- Mohamed CHERROUD <mohamed.cherroud-ext@faurecia.com>  Thu, 13 Dec 2012 16:54:41 +0100
+
+plugin-network (1.2.70) stable; urgency=low
+
+  [ Vincent BESANCON ]
+  * Updated README. Changed name of dependency.
+
+  [ Mohamed CHERROUD ]
+  * Updated fabfile and Makefile for monitoring.fabric v1.2.x.
+  * Add SAN Switch check ports plug-in (which monitor if the port is
+    operationally up)
+
+ -- Mohamed CHERROUD <mohamed.cherroud-ext@faurecia.com>  Tue, 09 Oct 2012 11:58:18 +0200
+
+plugin-network (1.2.64) stable; urgency=low
+
+  * check_ibm_san_directors_crcs.py: limit number of retention records to 50.
+
+ -- Vincent BESANCON <vincent.besancon@faurecia.com>  Fri, 01 Jun 2012 14:14:30 +0200
+
+plugin-network (1.2.63) stable; urgency=low
+
+  * check_ibm_san_directors_crcs.py: removed the pickle part. Now part of the
+    monitoring python package since v1.0.51.
+
+ -- Vincent BESANCON <vincent.besancon@faurecia.com>  Thu, 31 May 2012 15:33:02 +0200
+
+plugin-network (1.2.62) stable; urgency=low
+
+  * check_ibm_san_directors_crcs.py: fixed perfdata data source name.
+
+ -- Vincent BESANCON <vincent.besancon@faurecia.com>  Wed, 02 May 2012 17:25:34 +0200
+
+plugin-network (1.2.61) stable; urgency=low
+
+  * check_ibm_san_directors_crcs.py: fixed first run detection. refs #1202.
+  * check_ibm_san_directors_crcs.py: fixed average calculation.
+  * check_ibm_san_directors_crcs.py: fixed no description on port.
+
+ -- Vincent BESANCON <vincent.besancon@faurecia.com>  Wed, 02 May 2012 16:20:05 +0200
+
+plugin-network (1.2.6) stable; urgency=low
+
+  * Init new plugin to check for CRCs errors on IBM SAN Director.
+  * Added requirements to the README file.
+  * Added new plugin check_oftp in collection.
+
+ -- Vincent BESANCON <vincent.besancon@faurecia.com>  Wed, 02 May 2012 11:36:23 +0200
+
+plugin-network (1.2.5) stable; urgency=low
+
+  * check_cisco_cpu.py: fixed exception when cpu name cannot be determined.
+
+ -- Vincent BESANCON <vincent.besancon@faurecia.com>  Thu, 26 Apr 2012 10:43:50 +0200
+
+plugin-network (1.2.4) stable; urgency=low
+
+  * Start a new minor version v1.2.4.
+  * check_cisco_config.py: update because of changes introduced in monitoring
+    package v1.0.4.
+  * check_cisco_cpu.py: update because of changes introduced in monitoring
+    package v1.0.4.
+  * check_cisco_cpu.py: add more arguments validation for thresholds.
+  * check_cisco_config.py: updated to make use of OidValue attributes.
+  * check_cisco_cpu.py: updated to make use of OidValue attributes.
+  * check_cisco_hard.py: update because of changes introduced in monitoring
+    package v1.0.4.
+  * check_cisco_hsrp.py: update because of changes introduced in monitoring
+    package v1.0.4.
+  * check_cisco_temp.py: update because of changes introduced in monitoring
+    package v1.0.4.
+  * check_snmpnetstat.py: added --version.
+  * Extreme plugins: we do not have anymore devices from this brand. Deleted
+    plugins.
+  * Fabfile: launch apt-ftparchive on central to generate Release file and
+    sign it.
+
+ -- Vincent BESANCON <vincent.besancon@faurecia.com>  Wed, 25 Apr 2012 17:38:35 +0200
+
+plugin-network (1.2.3) stable; urgency=low
+
+  * check_cisco_config.py: use monitoring 1.0.2.
+  * Create a shared module used between plugins.
+  * check_cisco_cpu.py: use monitoring 1.0.2.
+  * check_cisco_config.py: add a comment. lol.
+  * check_cisco_hard.py: use monitoring 1.0.2.
+  * check_cisco_hsrp.py: use monitoring 1.0.2.
+  * check_cisco_temp.py: use monitoring 1.0.2.
+  * check_extreme_hard.py: use monitoring 1.0.2.
+  * check_extreme_vrrp.py: use monitoring 1.0.2.
+  * check_snmpnetstat.py: use shared module to have the current plugin
+    version.
+  * Package: install file shared.py.
+  * Fabfile: added tasks to build and tag the package.
+
+ -- Vincent BESANCON <vincent.besancon@faurecia.com>  Wed, 04 Apr 2012 12:05:28 +0200
+
+plugin-network (1.2.2) stable; urgency=low
+
+  * Replaces package plugin-check-snmpnetstat.
+  * New plugin: check_snmpnetstat.py.
+
+ -- Vincent BESANCON <vincent.besancon@faurecia.com>  Thu, 29 Mar 2012 17:16:10 +0200
+
+plugin-network (1.2.1) stable; urgency=low
+
+  * Added midding folder contrib/ to package
+  * Makefile: do a dh_clean for clean target
+  * Debian: change location of plugins to /usr/lib/faurecia
+  * Remove shared module, include version string in plugins
+
+ -- Vincent BESANCON <vincent.besancon@faurecia.com>  Wed, 14 Mar 2012 11:15:24 +0100
+
+plugin-network (1.2) stable; urgency=low
+
+  * Initial Release.
+
+ -- Vincent BESANCON <vincent.besancon@faurecia.com>  Tue, 13 Mar 2012 15:06:49 +0100
